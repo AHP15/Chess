@@ -17,3 +17,5 @@
 - When a game started a chess board should be displayed with initial chess pieces in thier correct positions
 - When a user click on a piece it should indicate to the user all the possible legal moves for this piece
 - User can remove history games
+
+[Database design](https://drawsql.app/teams/abdessittir/diagrams/chess)
