@@ -19,3 +19,12 @@
 - User can remove history games
 
 [Database design](https://drawsql.app/teams/abdessittir/diagrams/chess)
+
+# Stack
+- frontend
+  - React.js & TypeScript
+- Backend
+  - Nodejs, Express.js, Socket io
+- Database
+  - Prisma ORM, Postgres
+- Docker
