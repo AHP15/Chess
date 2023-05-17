@@ -1,20 +1,21 @@
 {
-  "name": "backend",
+  "name": "chess",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^4.14.0",
-    "dotenv": "^16.0.3",
+    "@prisma/client": "4.14.0",
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.22",
     "prisma": "^4.14.0"
   }

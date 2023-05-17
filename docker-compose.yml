@@ -1,0 +1,20 @@
+services:
+  app:
+    image: node:18-alpine
+    command: sh -c "yarn install && npx prisma migrate dev --name init && yarn run dev"
+    ports:
+      - 8080:8080
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      DATABASE_URL: postgresql://postgres:secret@postgresql:5432/chess?schema=SCHEMA
+  postgresql:
+    image: postgres:15.3
+    volumes:
+      - chess-postgresql-data:/var/lib/mysql
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: chess
+volumes:
+  chess-postgresql-data:
