@@ -1,0 +1,4 @@
+// connect frontend to backend
+// connect with database
+// tests folder(TDD)
+// connecting to backend , we need token => jwt
