@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/server.ts"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'nodemon dist/server.js'"
   },
   "compilerOptions": {
     "target": "es6",
