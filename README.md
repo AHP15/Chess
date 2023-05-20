@@ -45,6 +45,9 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+    <li><a href="https://www.vitejs.dev/">Vite</a></li>
   </ul>
 </details>
 
@@ -52,6 +55,9 @@
   <summary>Server</summary>
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
+     <li><a href="https://nodejs.com/">Node.js</a></li>
+     <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+     <li><a href="https://docker-curriculum.com/">Docker</a></li>
   </ul>
 </details>
 
@@ -59,8 +65,11 @@
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.prisma.io">Prisma</a></li>
   </ul>
 </details>
+
+<details>
 
 <!-- Features -->
 
