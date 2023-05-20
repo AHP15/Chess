@@ -68,9 +68,6 @@
     <li><a href="https://www.prisma.io">Prisma</a></li>
   </ul>
 </details>
-
-<details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
