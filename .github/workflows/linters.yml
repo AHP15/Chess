@@ -1,5 +1,11 @@
-name: Linterson: pull_requestenv:
-  FORCE_COLOR: 1jobs:
+name: Linters
+
+on: pull_request
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
   eslint:
     name: ESLint
     runs-on: ubuntu-22.04
