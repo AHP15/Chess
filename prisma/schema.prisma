@@ -11,7 +11,45 @@ datasource db {
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
-  name    String?  @db.VarChar(255)
-  email   String   @unique @db.VarChar(255)
+  id                   Int             @id @default(autoincrement())
+  username             String?         @db.VarChar(255)
+  email                String          @unique @db.VarChar(255)
+  password             String          @db.VarChar(255)
+  reset_password_token String          @db.VarChar(500)
+  created_at           DateTime
+  friends              Friend[]
+  games                Game[]
+  friend_requests      FriendRequest[]
+}
+
+model Friend {
+  id     Int  @id @default(autoincrement())
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+}
+
+model Game {
+  id              Int      @id @default(autoincrement())
+  users           User[]
+  black_player_id Int
+  white_player_id Int
+  winner          Int
+  created_at      DateTime
+  moves           Move[]
+}
+
+model Move {
+  id          Int    @id @default(autoincrement())
+  gameId      Int
+  game        Game   @relation(fields: [gameId], references: [id])
+  public_name String @db.VarChar(255)
+  x           Int
+  y           Int
+}
+
+model FriendRequest {
+  id              Int    @id @default(autoincrement())
+  requestedUserId Int
+  requestedUser   User   @relation(fields: [requestedUserId], references: [id])
+  sender_email    String @db.VarChar(255)
 }

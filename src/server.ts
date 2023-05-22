@@ -1,4 +1,5 @@
 import express from 'express';
+import { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import router from './routes/route';
@@ -32,6 +33,10 @@ app.use(endPoint, router);
 console.log("env",process.env.ENDPOINT);
 console.log("endpoint", endPoint );
 const port = process.env.PORT || 8080;
+
+app.get('/', (req: Request, res: Response) => {
+  res.status(200).send({ message: 'Hello!' });
+});
 app.listen(port, () => {
     console.log('Server lisning on port', port);
 });
