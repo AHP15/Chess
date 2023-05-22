@@ -5,7 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/server.ts",
-    "lint": "npx eslint . --fix"
+    "lint": "npx eslint . --fix && npx stylelint '**/*.{css,scss}' --fix -f"
   },
   "compilerOptions": {
     "target": "es6",
@@ -41,6 +41,10 @@
     "eslint-plugin-react": "^7.32.2",
     "nodemon": "^2.0.22",
     "prisma": "^4.14.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }
