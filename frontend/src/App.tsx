@@ -4,10 +4,10 @@ import routes from './pages/routes';
 import axios from 'axios';
 
 import './App.css';
-
 function App() {
   const fetchData = async () => {
     const req = await axios.get('http://localhost:8080');
+    // eslint-disable-next-line no-console
     console.log(req.data);
   };
 
