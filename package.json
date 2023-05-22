@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/server.ts"
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "lint": "npx eslint . --fix"
   },
   "compilerOptions": {
     "target": "es6",
